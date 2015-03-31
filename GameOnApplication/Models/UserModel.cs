@@ -11,5 +11,6 @@ namespace GameOnApplication.Models
         public string password { get; set; }
         public string email { get; set; }
         public string contactnum { get; set; }
+        public int id { get; set; }
     }
 }
