@@ -11,6 +11,7 @@ namespace GameOnApplication.Models
         public string Place { get; set; }
         public string Animal { get; set; }
         public string Thing { get; set; }
+        public string Score { get; set; }
     }
 
 }
