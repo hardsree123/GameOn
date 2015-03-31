@@ -5,6 +5,7 @@ using System.Transactions;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using System.Web.SessionState;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
@@ -15,6 +16,7 @@ namespace GameOnApplication.Controllers
 {
     [Authorize]
     [InitializeSimpleMembership]
+    [SessionState(SessionStateBehavior.Default)]
     public class AccountController : Controller
     {
         //
@@ -37,6 +39,7 @@ namespace GameOnApplication.Controllers
         {
             if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
             {
+
                 return RedirectToLocal(returnUrl);
             }
 
