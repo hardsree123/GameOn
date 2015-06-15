@@ -171,6 +171,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\GameAnalytics.cs" />
     <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Persistance\LoginDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\LoginProvider.cs" />
   </ItemGroup>
@@ -292,9 +293,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\GameView\GameStart.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Persistance\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

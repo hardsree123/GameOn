@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Diagnostics;
+using GameOnApplication.Models;
 using GameOnApplication.Interface;
 
 namespace GameOnApplication.Providers
@@ -35,6 +36,11 @@ namespace GameOnApplication.Providers
             {
             }
             internal static readonly LoginProvider instance = new LoginProvider();
+        }
+
+        public UserModel UserLogin(LoginModel userLoginCredentials)
+        {
+            return 
         }
     }
 }

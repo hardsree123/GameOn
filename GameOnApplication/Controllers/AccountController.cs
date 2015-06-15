@@ -11,6 +11,7 @@ using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
 using GameOnApplication.Filters;
 using GameOnApplication.Models;
+using GameOnApplication.Providers;
 
 namespace GameOnApplication.Controllers
 {
